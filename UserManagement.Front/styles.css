@@ -1,12 +1,25 @@
-h3 {
+table, th, td {
+    border: 1px solid black;
+}
+
+.center {
+    margin: auto;
+    width: 70%;
+}
+
+.inline {
     display: inline;
 }
 
-ul {
+.paging ul {
     list-style-type: none;
 }
 
-li {
+.paging li {
     float: left;
     margin: 10px;
+}
+
+.float-right {
+    float: right;
 }
