@@ -1,0 +1,12 @@
+h3 {
+    display: inline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    margin: 10px;
+}
