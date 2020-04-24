@@ -1,10 +1,27 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .users-table {
     width: 100%;
     margin-top: 20px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.users-table, 
+.users-table th, 
+.users-table td {
+    border-collapse: collapse;
 }
 
 .users-table th {
     text-align: left;
+    background-color: #009879;
+    color: #fff;
 }
 
 .users-table th, 
@@ -12,11 +29,21 @@
     padding: 5px 0 5px 10px;
 }
 
-.users-table, 
-.users-table th, 
-.users-table td {
-    border: 1px solid black;
-    border-collapse: collapse;
+.users-table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.users-table tbody tr:nth-of-type(odd) {
+    background-color: #f3f3f3;
+}
+
+.users-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.users-table tbody tr.active-row {
+    font-weight: bold;
+    color:#009879;
 }
 
 .center {
