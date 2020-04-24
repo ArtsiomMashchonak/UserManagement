@@ -6,7 +6,7 @@ body {
 
 .users-table {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 40px;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -62,6 +62,34 @@ body {
     border-radius: 5px;
 }
 
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination ul {
+    list-style-type: none;
+}
+
+.pagination li {
+    float: left;
+    margin: 10px;
+}
+
+.pagination li a {
+    padding: 5px;
+    background-color: #009879;
+    color: white;
+    border: #009879;
+    border-radius: 5px;
+}
+
+.float-right {
+    float: right;
+}
+
 .center {
     margin: auto;
     width: 70%;
@@ -69,17 +97,4 @@ body {
 
 .inline {
     display: inline;
-}
-
-.paging ul {
-    list-style-type: none;
-}
-
-.paging li {
-    float: left;
-    margin: 10px;
-}
-
-.float-right {
-    float: right;
 }
