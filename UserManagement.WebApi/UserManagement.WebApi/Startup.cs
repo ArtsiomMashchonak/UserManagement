@@ -14,8 +14,14 @@ namespace UserManagement.WebApi
 {
     public class Startup
     {
+        private readonly string _allowLocalhostPolicyName = "AllowLocalhost";
+
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(corsOpts =>
+                corsOpts.AddPolicy(_allowLocalhostPolicyName, 
+                    policyBuilder => policyBuilder.WithOrigins("http://127.0.0.1:5500")));
+
             services.AddControllers();
             services.AddScoped<IUsersRepository, UsersRepository>();
         }
@@ -28,7 +34,7 @@ namespace UserManagement.WebApi
             }
 
             app.UseRouting();
-
+            app.UseCors(_allowLocalhostPolicyName);
             app.UseEndpoints(endpoints => endpoints.MapControllers());
         }
     }
