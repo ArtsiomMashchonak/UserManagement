@@ -98,3 +98,8 @@ body {
 .inline {
     display: inline;
 }
+
+.form * {
+    box-sizing: border-box;
+    
+}
