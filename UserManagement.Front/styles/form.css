@@ -1,0 +1,10 @@
+.form * {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+.form__title {
+    font-size: 2em;
+    font-weight: 600;
+}
