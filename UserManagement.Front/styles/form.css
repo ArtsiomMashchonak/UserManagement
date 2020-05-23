@@ -1,10 +1,29 @@
-.form * {
-    box-sizing: border-box;
+.form {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.form * {
+    box-sizing: border-box; 
     line-height: 1.5;
 }
 
 .form__title {
     font-size: 2em;
     font-weight: 600;
+}
+
+.form__item {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0 30px 50px;
+}
+
+.form__label {
+    font-weight: 600;
+    margin: 0 80px 0 0;
+}
+
+.form__input {
+    width: 50%;
 }
