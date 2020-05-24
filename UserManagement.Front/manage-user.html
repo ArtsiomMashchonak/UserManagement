@@ -9,12 +9,25 @@
 </head>
 
 <body>
-    <form class="form" action="post">
+    <form class="form" action="POST">
         <div class="form__title">Manage User</div>
+        <div class="form__item">
+            <label class="form__label" for="email-input">Email</label>          
+            <input class="form__input" id="email-input" type="email" placeholder="Enter user's email...">
+        </div>
         <div class="form__item">
             <label class="form__label" for="name-input">Name</label>
             <input class="form__input" id="name-input" type="text" placeholder="Enter user's name...">
         </div>
+        <div class="form__item">
+            <label class="form__label" for="surname-input">Surname</label>
+            <input class="form__input" id="surname-input" type="text" placeholder="Enter user's surname...">
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="birthdate-input">Birth Date</label>
+            <input class="form__input" id="birthdate-input" type="date" placeholder="Enter user's birth date...">
+        </div>
+        <button class="form__button" type="submit">Submit</button>
     </form>
 </body>
 
